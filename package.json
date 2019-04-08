@@ -1,0 +1,43 @@
+{
+  "name": "fun-with-react",
+  "version": "0.0.1",
+  "description": "Let's Have Some Fun!!!",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "test": "npm test"
+  },
+  "keywords": [
+    "react",
+    "npm",
+    "lms",
+    "heroku"
+  ],
+  "author": "Keith Mandela",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.16.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "dotenv-webpack": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-webpack": "^0.4.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
