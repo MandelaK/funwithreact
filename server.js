@@ -1,13 +1,16 @@
-const path = require('path')
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 3000
+const path = require('path');
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 8080;
 
-const publicPath = path.join(__dirname, '..', 'public')
+app.use(express.static(path.join(__dirname, '/dist/')));
 
-app.use(express.static(publicPath))
+app.get('/', function (request, response) {
+    response.sendFile(__dirname + 'index.html');
+});
 
-app.get('*', (res) => {
-  res.sendFile(path.join(publicPath, 'index.html'))
-})
-app.listen(port)
+app.listen(PORT, error => (
+    error
+        ? console.error(error)
+        : console.info(`Listening on port ${PORT}. Visit http://localhost:${PORT}/ in your browser.`)
+));
