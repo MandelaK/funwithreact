@@ -9,7 +9,7 @@ class Beer extends React.Component {
       this.setState({
           isLoading: true
       })
-    fetch(process.env.BEERS_URL)
+    fetch('https://api.punkapi.com/v2/beers/random')
       .then(res => res.json())
       .then(data => {
         this.setState({

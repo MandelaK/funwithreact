@@ -10,7 +10,7 @@ class Jokes extends React.Component {
     this.setState({
         isLoading: true
       });
-      fetch(process.env.JOKES_URL,{
+      fetch('https://icanhazdadjoke.com/',{
           headers: {
               'Accept': 'application/json',
             }
