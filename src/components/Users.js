@@ -17,7 +17,7 @@ class Users extends React.Component {
     this.setState({
       isLoading: true
     });
-    fetch("https://randomuser.me/api/", {
+    fetch(process.env.USERS_URL, {
       headers: {
         Accept: "application/json"
       }
