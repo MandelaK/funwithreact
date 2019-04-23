@@ -4,10 +4,10 @@
   "description": "Let's Have Some Fun!!!",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && NODE_ENV=production node server.js",
-    "build": "webpack --config webpack.prod.config.js --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --hot --inline",
-    "test": "npm test"
+    "build": "webpack --config webpack.prod.config.js --mode production",
+    "start": "npm run build && NODE_ENV=production node server.js"
   },
   "engines": {
     "node": "11.12.0"
